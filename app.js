@@ -104,7 +104,7 @@ function getArray(itemCount) {
   //Если аргумент не передан(равен 0) или не целое число, сообщаем об ошибке
   if (!itemCount || typeof itemCount !== "number" || itemCount % 1 !== 0)
     return console.error(
-      `counterArray() ERROR. ${
+      `getArray() ERROR. ${
         Array.isArray(itemCount) ? "array" : typeof itemCount
       }: "${itemCount}", is incorrect value. Please check your arguments.`
     );
@@ -127,7 +127,7 @@ function doubleArray(inputArray) {
   //Если переданный аргумент не массив, сообщаем об ошибке
   if (!Array.isArray(inputArray))
     return console.error(
-      `counterArray() ERROR. ${typeof inputArray}: "${inputArray}", is incorrect value. Please check your arguments.`
+      `doubleArray() ERROR. ${typeof inputArray}: "${inputArray}", is incorrect value. Please check your arguments.`
     );
   //Создаем пустой массив resArray, в который будем добавлять переданные массивы без первого эллемента
   let resArray = [];
