@@ -9,8 +9,8 @@ function multiply() {
     if (isNaN(value) || typeof value !== "number")
       return console.error(
         `multiply() ERROR. 
-				${Array.isArray(value) ? "array" : typeof value}: "${value}", 
-				is incorrect value. Please check your arguments.`
+        ${Array.isArray(value) ? "array" : typeof value}: "${value}", 
+        is incorrect value. Please check your arguments.`
       );
 
     result *= value;
@@ -26,8 +26,8 @@ function reverseString(str) {
   if (!str || typeof str !== "string")
     return console.error(
       `reverseString() ERROR. 
-			${Array.isArray(str) ? "array" : typeof str}: "${str}", 
-			is incorrect value. Please check your arguments.`
+      ${Array.isArray(str) ? "array" : typeof str}: "${str}", 
+      is incorrect value. Please check your arguments.`
     );
 
   let result = "";
@@ -44,8 +44,8 @@ function getCodeStringFromText(str) {
   if (!str || typeof str !== "string")
     return console.error(
       `getCodeStringFromText() ERROR. 
-			${Array.isArray(str) ? "array" : typeof str}: "${str}", 
-				is incorrect value. Please check your arguments.`
+      ${Array.isArray(str) ? "array" : typeof str}: "${str}", 
+        is incorrect value. Please check your arguments.`
     );
 
   let result = "";
@@ -67,14 +67,14 @@ function secretNumber(yourNumber) {
   if (typeof yourNumber !== "number" || yourNumber % 1 !== 0)
     return console.error(
       `secretNumber() ERROR. 
-			${Array.isArray(yourNumber) ? "array" : typeof yourNumber}
-			: "${yourNumber}", is incorrect value. Please check your arguments.`
+      ${Array.isArray(yourNumber) ? "array" : typeof yourNumber}
+      : "${yourNumber}", is incorrect value. Please check your arguments.`
     );
 
   if (yourNumber < 1 || yourNumber > 10)
     return console.error(
       `secretNumber() ERROR. Number: ${yourNumber}, does't belong to the range 
-			[1..10]. Please check your arguments.`
+      [1..10]. Please check your arguments.`
     );
 
   let randomNumber = Math.ceil(Math.random() * 10);
@@ -91,8 +91,8 @@ function getArray(itemCount) {
   if (!itemCount || typeof itemCount !== "number" || itemCount % 1 !== 0)
     return console.error(
       `getArray() ERROR. 
-			${Array.isArray(itemCount) ? "array" : typeof itemCount}: 
-			"${itemCount}", is incorrect value. Please check your arguments.`
+      ${Array.isArray(itemCount) ? "array" : typeof itemCount}: 
+      "${itemCount}", is incorrect value. Please check your arguments.`
     );
 
   let resArray = [];
@@ -108,7 +108,7 @@ function doubleArray(inputArray) {
   if (!Array.isArray(inputArray))
     return console.error(
       `doubleArray() ERROR. ${typeof inputArray}: "${inputArray}", 
-			is incorrect value. Please check your arguments.`
+      is incorrect value. Please check your arguments.`
     );
 
   let resArray = [];
@@ -127,7 +127,7 @@ function changeCollection() {
     if (!Array.isArray(arg))
       return console.error(
         `changeCollection() ERROR. ${typeof arg}: "${arg}", 
-				is incorrect value. Please check your arguments.`
+        is incorrect value. Please check your arguments.`
       );
 
     resArray.push(arg.slice(1));
@@ -145,19 +145,19 @@ function funcGetUsers(users, key, value) {
   if (!Array.isArray(users))
     return console.error(
       `funcGetUsers() ERROR. ${typeof users}: "${users}", 
-			is incorrect value. Please check your arguments.`
+      is incorrect value. Please check your arguments.`
     );
 
   if (!key || typeof key !== "string")
     return console.error(
       `funcGetUsers() ERROR. ${typeof key}: "${key}", 
-			is incorrect value. Please check your arguments.`
+      is incorrect value. Please check your arguments.`
     );
 
   if (!value && value !== 0 && value !== "" && value !== false)
     return console.error(
       `funcGetUsers() ERROR. ${typeof value}: "${value}", 
-			is incorrect value. Please check your arguments.`
+      is incorrect value. Please check your arguments.`
     );
 
   let resArray = [];
@@ -165,7 +165,7 @@ function funcGetUsers(users, key, value) {
     if (typeof user !== "object")
       return console.error(
         `funcGetUsers() ERROR. ${typeof user}: "${user}", 
-				is incorrect value. Please check your arguments.`
+        is incorrect value. Please check your arguments.`
       );
 
     if (user[key] === value) resArray.push(user);
